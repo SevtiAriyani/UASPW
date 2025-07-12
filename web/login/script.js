@@ -33,7 +33,7 @@ if (document.getElementById('loginForm')) {
       sessionStorage.setItem('session', JSON.stringify(sessionData));
       setCookie('session_user', uname, 1); // expire in 1 day
 
-      window.location.href = 'home.html';
+      window.location.href = 'admin.html';
     } else {
       alert('Username atau password salah!');
     }
@@ -47,6 +47,7 @@ function checkSession() {
 
   if (session && cookieUser && session.username === cookieUser) {
     document.getElementById('welcome').innerText = `Halo, ${cookieUser}!`;
+    window.location.href = 'admin.html';
   } else {
     alert('Session tidak ditemukan. Silakan login kembali.');
     window.location.href = 'login.html';
