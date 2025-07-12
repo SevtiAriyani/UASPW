@@ -154,6 +154,11 @@ cancelBtn.addEventListener('click', hideForm)
 
 // Load data saat halaman siap
 window.addEventListener('DOMContentLoaded', loadData)
+  
+function logout() {
+    localStorage.removeItem('sessionUser');
+    location.reload();
+  }
 
 </script>
 
