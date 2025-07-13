@@ -1,3 +1,4 @@
+
 // Simulasi user (hardcoded)
 const users = {
   'admin': '12345',
@@ -47,7 +48,6 @@ function checkSession() {
 
   if (session && cookieUser && session.username === cookieUser) {
     document.getElementById('welcome').innerText = `Halo, ${cookieUser}!`;
-    window.location.href = 'admin.html';
   } else {
     alert('Session tidak ditemukan. Silakan login kembali.');
     window.location.href = 'login.html';
