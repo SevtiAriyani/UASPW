@@ -19,9 +19,7 @@
 
 <h2>CRUD Sederhana dengan Supabase</h2>
 <button id="addBtn">Tambah</button>
-<button onclick="window.location.href='https://sevtiariyani.github.io/UASPW/web'">
-  Logout
-</button>
+<button id="logoutBtn">Logout</button>
 
 <table>
   <thead>
@@ -156,6 +154,11 @@ cancelBtn.addEventListener('click', hideForm)
 
 // Load data saat halaman siap
 window.addEventListener('DOMContentLoaded', loadData)
+
+document.getElementById('logoutBtn').addEventListener('click', () => {
+  localStorage.removeItem('sessionUser')
+  window.location.href = 'login.html'
+})
   
 </script>
 </body>
