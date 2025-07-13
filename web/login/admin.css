@@ -1,4 +1,4 @@
-/* ——— Global & Layout ——— */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 40px auto;
@@ -12,7 +12,6 @@ h2 {
   color: #333;
 }
 
-/* ——— Tombol Tambah ——— */
 #addBtn {
   background-color: #2e86de;
   color: white;
@@ -28,7 +27,6 @@ h2 {
   background-color: #1b4f72;
 }
 
-/* ——— Tabel ——— */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -57,7 +55,6 @@ tr:hover {
   cursor: pointer;
 }
 
-/* ——— Form CRUD ——— */
 #crudForm {
   display: none;
   background-color: white;
@@ -138,21 +135,20 @@ textarea {
   background-color: #95a5a6;
 }
 
-/* ——— Tombol Logout (baru) ——— */
 #logoutBtn {
-  background-color: #e74c3c;      /* Merah: tindakan penting */
+  background-color: #e74c3c;      
   color: #fff;
   border: none;
   padding: 10px 18px;
   font-size: 14px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;               /* Tetap di kanan‑atas layar */
+  transition: background-color 0.3s ease;               
   top: 20px;
   right: 20px;
-  z-index: 1000;                 /* Pastikan tampil di depan */
+  z-index: 1000;               
 }
 
 #logoutBtn:hover {
-  background-color: #c0392b;     /* Merah lebih gelap saat hover */
+  background-color: #c0392b;     
 }
