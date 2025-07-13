@@ -124,12 +124,12 @@ button.ikon:hover {
 }
 
 button.tambah {
-  background-color: #28a745; /* Hijau IPWIJA */
+  background-color: #28a745; 
   color: white;
 }
 
 button.hapus {
-  background-color: #dc3545; /* Merah IPWIJA */
+  background-color: #dc3545; 
   color: white;
 }
 
